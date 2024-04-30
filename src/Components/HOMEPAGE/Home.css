@@ -1,0 +1,13 @@
+html {
+        --background-bleu: #dff9fb;
+          --backgroun-bleu2: #c7ecee;
+          --background-nectarine: #ffbe76;
+          --background-beekeper:#f6e58d;
+          --background-black: #1e272e;
+          --color-text2:#ffffff;
+          --color-text1:#0C0C0C; 
+}
+
+body{
+    background-color: var(--backgroun-bleu2);
+}

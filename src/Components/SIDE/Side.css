@@ -1,0 +1,33 @@
+html {
+    --background-bleu: #dff9fb;
+    --backgroun-bleu2: #c7ecee;
+    --background-nectarine: #ffbe76;
+    --background-beekeper:#f6e58d;
+    --background-black: #1e272e;
+    --color-text2:#ffffff;
+    --color-text1:#0C0C0C;
+    
+  }
+
+.container-side {
+    background-color: var(--background-beekeper);
+    position: absolute;
+    height: 78.7%;
+    width: 20rem;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-side ul li {
+    list-style-type: none;
+    padding-top: 2rem;
+    border-bottom: 0.3rem solid var(--background-nectarine);
+}
+
+
+.container-side ul li a {
+    text-decoration: none;
+    color: var(--color-text1);
+}

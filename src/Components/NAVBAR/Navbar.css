@@ -1,0 +1,26 @@
+html {
+--background-bleu: #dff9fb;
+  --backgroun-bleu2: #c7ecee;
+  --background-nectarine: #ffbe76;
+  --background-beekeper:#f6e58d;
+  --background-black: #1e272e;
+  --color-text2:#ffffff;
+  --color-text1:#0C0C0C;
+}
+
+nav {
+    background-color: #ffbe76;
+    height: 7rem;
+    display: flex;
+}
+
+nav img {
+    width: 7rem;
+    height: 7rem;
+    margin-left: 2rem;
+}
+
+nav p {
+    margin-top: 3rem;
+    color: var(--color-text1);
+}
