@@ -1,6 +1,5 @@
 import './App.css'
 import Homepage from './Components/HOMEPAGE/Home';
-import Side from './Components/SIDE/Side';
 
 
 function App() {
@@ -9,7 +8,6 @@ function App() {
     <>
     <div>
       <Homepage/>
-      <Side/>
     </div>
     </>
   )
