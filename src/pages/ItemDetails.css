@@ -1,0 +1,15 @@
+.card {
+    background-color: var(--backgroun-bleu);
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25rem;
+    height: 38rem;
+
+}
+
+hgroup {
+    text-align: center;
+}
