@@ -1,5 +1,6 @@
 .product-list{
     overflow: scroll;
+    min-width: 80vw;
     max-height: 80vh;
     background-color:var(--backgroun-bleu);
     margin-left: 20rem;

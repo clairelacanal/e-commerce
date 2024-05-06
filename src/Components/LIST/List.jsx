@@ -5,8 +5,8 @@ import ListItem from '../LISTITEM/ListItem';
 import ItemDetails from '../../pages/ItemDetails';
 import { Link } from 'react-router-dom';
 
-function List(){
-    const [articles, setArticles] = useState(Data);
+function List({articles, setArticles}){
+    //const [articles, setArticles] = useState(Data);
 
     //Supprime un article
     function deleteArticle(title){

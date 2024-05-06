@@ -1,0 +1,56 @@
+.formulaire {
+    max-width: 60rem; 
+    margin-left: 25rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding: 1.25rem;
+    background-color: #f8f9fa;
+    border: 0.0625rem solid #e1e1e1;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+}
+
+.formulaire h2 {
+    text-align: center;
+    color: var(--background-nectarine);
+    font-weight: bold;
+}
+
+.formulaire form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.formulaire label {
+    flex: 1 1 15rem; /* Réduire la base de flex pour rendre le label plus petit */
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    margin-bottom: 1rem;
+}
+
+.formulaire input[type='text'] {
+    flex: 1; 
+    margin-left: 0.5rem; 
+    padding: 0.3rem; /* Padding réduit pour diminuer la taille */
+    border: 0.0625rem solid var(--background-beekeper);
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+}
+
+.formulaire button {
+    width: 5rem; 
+    padding: 0.625rem;
+    color: #fff;
+    background-color: var(--background-nectarine);
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.formulaire button:hover {
+    background-color: var(--background-nectarine-dark); /* Ajout d'une variable pour un hover plus foncé */
+}
