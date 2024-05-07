@@ -16,6 +16,36 @@ function Form({product, setProduct}){
         images: ""
     })
 
+    
+      /*function handleSubmit(event) {
+        event.preventDefault();
+    
+        if (productForm.id) {
+          const productToEditIndex = product.findIndex(
+            (product) => product.id === productForm.id
+          );
+    
+          setProduct([
+            ...product.slice(0, productToEditIndex),
+            ...product.slice(productToEditIndex + 1),
+            productForm
+          ]);
+        } else {
+          setProductForm([
+            ...product,
+            { ...productForm, id: (product.length + 1).toString() }
+          ]);
+        }
+    
+        setProductForm(productForm); 
+      }
+
+    function handleEdit(id){
+        const productToEdit = product.find((product) => product.id === id);
+
+        setProductForm(productToEdit);
+    }*/
+
 
 
     function handleSumit(event){
@@ -71,7 +101,6 @@ function Form({product, setProduct}){
             <input type='text' name='thumbnail' id='thumbnail' placeholder="Add a thumbnail" onChange={handleChange}
             value={productForm.thumbnail}></input>
            
-
             
             <input type='text' name='images' id='images' placeholder="Add a image" onChange={handleChange}
             value={productForm.images}></input>

@@ -1,17 +1,59 @@
 import { useState } from 'react';
 import './List.css';
-import Data from '../../assets/data.json';
+//import Data from '../../assets/data.json';
 import ListItem from '../LISTITEM/ListItem';
-import ItemDetails from '../../pages/ItemDetails';
-import { Link } from 'react-router-dom';
+//import ItemDetails from '../../pages/ItemDetails';
+//import { Link } from 'react-router-dom';
 
 function List({articles, setArticles}){
     //const [articles, setArticles] = useState(Data);
 
-    //Supprime un article
+   
     function deleteArticle(title){
         const articleToKeep = articles.filter((article) => article.title !== title);
         setArticles(articleToKeep);
+    }
+
+    const emptyForm = {
+        title: "",
+        description: "",
+        price: "",
+        discountPercentage: "",
+        stock: "",
+        brand: "",
+        category: "",
+        thumbnail: "",
+        images: ""
+      };
+      const [articleForm, setArticleForm] = useState(emptyForm);
+    
+      function handleSubmit(event) {
+        event.preventDefault();
+    
+        if (articleForm.id) {
+          const articleToEditIndex = articles.findIndex(
+            (article) => article.id === articleForm.id
+          );
+    
+          setArticles([
+            ...articles.slice(0, articleToEditIndex),
+            ...articles.slice(articleToEditIndex + 1),
+            articleForm
+          ]);
+        } else {
+          setArticleForm([
+            ...articles,
+            { ...articleForm, id: (articles.length + 1).toString() }
+          ]);
+        }
+    
+        setArticleForm(emptyForm); 
+      }
+
+    function handleEdit(id){
+        const articleToEdit = articles.find((article) => article.id === id);
+
+        setArticleForm(articleToEdit);
     }
 
     
@@ -33,6 +75,7 @@ function List({articles, setArticles}){
                 thumbnail={article.thumbnail}
                 images={article.images}
                 deleteArticle={deleteArticle}
+                handleEdit={handleEdit}
                 />
             ))}
         </div>  
@@ -41,8 +84,7 @@ function List({articles, setArticles}){
 
 export default List;
 
-//<Link to={`/product-details/${product._id}`}><ItemDetails/><button>Détails</button></Link>
-//<Link key={product._id} to={`/product-details/${product._id}`}><ItemDetails {...article}/>
+
 
 
 

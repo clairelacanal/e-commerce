@@ -19,6 +19,8 @@ function ListItem({id,title, description, price, discountPercentage, rating, del
             {goodProduct && <div className="tag good">{msgRating}</div>}
             <Link to={`/product-details/${id}`} className='details'>En savoir +</Link>
             <button onClick={() => deleteArticle(title)}>Delete</button>
+            <input type="submit" value={`${productForm.id ? "Edit" : "Add"} Character`}
+        />
        </div>
     )
 }
