@@ -1,0 +1,47 @@
+.titles {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 35rem;
+}
+
+p {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.titles img {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50rem;
+    display: block;
+    margin: auto 0;
+    margin-bottom: 1rem;
+}
+
+.claire-p img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50rem;
+    margin-right: 20rem;
+}
+
+.yassin-p img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50rem;
+}
+
+.paragraphes {
+    background-color: aqua;
+    width: 50rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+

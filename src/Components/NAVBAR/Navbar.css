@@ -8,6 +8,10 @@ html {
   --color-text1:#0C0C0C;
 }
 
+p {
+    padding-top: 1rem;
+}
+
 nav {
     background-color: #ffbe76;
     height: 5rem;

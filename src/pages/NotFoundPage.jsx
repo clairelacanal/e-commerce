@@ -2,7 +2,7 @@ import "./NotFoundPage.css";
 import Navbar from "../Components/NAVBAR/Navbar";
 import Side from "../Components/SIDE/Side";
 import Footer from "../Components/FOOTER/Footer";
-import image from "../../public/found681621.png";
+import image from "../../public/found_6681621.png";
 
 function NotFoundPage() {
   return (

@@ -5,6 +5,7 @@ function Navbar() {
   return (
     <nav>
       <img src={Logo} alt="logo-entreprise"></img>
+      <p>E-comm</p>
     </nav>
   );
 }
