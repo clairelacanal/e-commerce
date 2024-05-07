@@ -1,33 +1,18 @@
-import { useState } from 'react';
-import './List.css';
+import "./List.css";
 //import Data from '../../assets/data.json';
-import ListItem from '../LISTITEM/ListItem';
+import ListItem from "../LISTITEM/ListItem";
 //import ItemDetails from '../../pages/ItemDetails';
 //import { Link } from 'react-router-dom';
 
-function List({articles, setArticles}){
-    //const [articles, setArticles] = useState(Data);
+function List({ articles, setArticles, setProductForm }) {
+  //const [articles, setArticles] = useState(Data);
 
-   
-    function deleteArticle(title){
-        const articleToKeep = articles.filter((article) => article.title !== title);
-        setArticles(articleToKeep);
-    }
+  function deleteArticle(title) {
+    const articleToKeep = articles.filter((article) => article.title !== title);
+    setArticles(articleToKeep);
+  }
 
-    const emptyForm = {
-        title: "",
-        description: "",
-        price: "",
-        discountPercentage: "",
-        stock: "",
-        brand: "",
-        category: "",
-        thumbnail: "",
-        images: ""
-      };
-      const [articleForm, setArticleForm] = useState(emptyForm);
-    
-      function handleSubmit(event) {
+  /*function handleSubmit(event) {
         event.preventDefault();
     
         if (articleForm.id) {
@@ -48,47 +33,39 @@ function List({articles, setArticles}){
         }
     
         setArticleForm(emptyForm); 
-      }
+      }*/
 
-    function handleEdit(id){
-        const articleToEdit = articles.find((article) => article.id === id);
+  function handleEdit(id) {
+    const articleToEdit = articles.find((article) => article.id === id);
 
-        setArticleForm(articleToEdit);
-    }
+    setProductForm(articleToEdit);
+  }
 
-    
-
-    return(
-        <div className='product-list'>
-            {articles.map((article) => (
-                <ListItem
-                key={article.id}
-                id={article.id}
-                title={article.title}
-                description={article.description}
-                price={article.price}
-                discountPercentage={article.discountPercentage}
-                rating={article.rating}
-                stock={article.stock}
-                brand={article.brand}
-                category={article.category}
-                thumbnail={article.thumbnail}
-                images={article.images}
-                deleteArticle={deleteArticle}
-                handleEdit={handleEdit}
-                />
-            ))}
-        </div>  
-    )
+  return (
+    <div className="product-list">
+      {articles.map((article) => (
+        <ListItem
+          key={article.id}
+          id={article.id}
+          title={article.title}
+          description={article.description}
+          price={article.price}
+          discountPercentage={article.discountPercentage}
+          rating={article.rating}
+          stock={article.stock}
+          brand={article.brand}
+          category={article.category}
+          thumbnail={article.thumbnail}
+          images={article.images}
+          deleteArticle={deleteArticle}
+          handleEdit={handleEdit}
+        />
+      ))}
+    </div>
+  );
 }
 
 export default List;
-
-
-
-
-
-
 
 /*{students &&
     students.map((student) => {

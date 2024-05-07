@@ -12,22 +12,42 @@ html {
 .container-side {
     background-color: var(--background-beekeper);
     position: absolute;
-    height: 78.7%;
-    width: 20rem;
+    height: 80rem;
+    width: 10rem;
     left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.container-side ul {
+    padding: 0;
+    width: 100%;
+    margin-top: 2rem;
+}
+
 .container-side ul li {
     list-style-type: none;
     padding-top: 2rem;
-    border-bottom: 0.3rem solid var(--background-nectarine);
+    padding-right: 0; 
+    padding-bottom: 2rem; 
+    padding-left: 0; 
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 
 .container-side ul li a {
     text-decoration: none;
     color: var(--color-text1);
+    font-weight: 700;
+    margin-top: 1rem;
+    display: block; 
+    width: 100%; 
+    border-bottom: 0.2rem solid var(--background-nectarine);
+    text-align: center;
+}
+
+.container-side ul li a:hover {
+    color: var(--background-nectarine);
 }

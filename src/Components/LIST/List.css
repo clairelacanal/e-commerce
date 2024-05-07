@@ -3,7 +3,7 @@
     min-width: 80vw;
     max-height: 80vh;
     background-color:var(--backgroun-bleu);
-    margin-left: 20rem;
+    margin-left: 16rem;
     display: flex;
     flex-wrap: wrap;
 }

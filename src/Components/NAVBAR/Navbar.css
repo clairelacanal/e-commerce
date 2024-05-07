@@ -10,17 +10,13 @@ html {
 
 nav {
     background-color: #ffbe76;
-    height: 7rem;
+    height: 5rem;
     display: flex;
 }
 
 nav img {
-    width: 7rem;
-    height: 7rem;
+    width: 5rem;
+    height: 5rem;
     margin-left: 2rem;
 }
 
-nav p {
-    margin-top: 3rem;
-    color: var(--color-text1);
-}

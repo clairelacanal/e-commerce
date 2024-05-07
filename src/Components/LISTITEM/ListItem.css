@@ -2,7 +2,8 @@
     position: relative; 
     border: 3px solid var(--background-beekeper);
     border-radius: 20px;
-    width: 30rem;
+    width: 20rem;
+    height: 28rem;
     padding: 1.5rem 2rem;
     display: flex;
     flex-direction: column;
@@ -41,6 +42,11 @@
     text-transform: uppercase;
     font-weight: 700;
     margin-top: 1rem;
+}
+
+.card-item button:nth-of-type(2){
+    background-color: var(--background-beekeper);
+    border: 1px solid var(--background-beekeper);
 }
 
 .msgRating {
