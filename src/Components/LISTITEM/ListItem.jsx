@@ -22,18 +22,20 @@ function ListItem({
       <p className="description">
         <FaTag /> {description}
       </p>
-      <p>
-        {price}
-        <FaDollarSign />{" "}
-      </p>
-      <p className="discount">
-        {discountPercentage}
-        <FaPercent />{" "}
-      </p>
-      <p>
-        {rating}
-        <FaStar />
-      </p>
+      <div className="container-fa">
+        <p className="price">
+          {price}
+          <FaDollarSign />{" "}
+        </p>
+        <p className="discount">
+          {discountPercentage}
+          <FaPercent />{" "}
+        </p>
+        <p className="rate">
+          {rating}
+          <FaStar />
+        </p>
+      </div>
       {veryGoodProduct && <div className="tag very-good">{msgRating}</div>}
       {goodProduct && <div className="tag good">{msgRating}</div>}
       <Link to={`/product-details/${id}`} className="details">

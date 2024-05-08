@@ -1,15 +1,66 @@
+
 .card {
-    background-color: var(--backgroun-bleu);
-    width: 60rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 25rem;
-    height: 38rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 12px var(--background-nectarine);
+    margin: 4rem auto 30rem;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    max-height: 600px;
+  }
+  
+  hgroup {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: var(--background-nectarine);
+    font-size: 24px;
+  }
+  
+  h3 {
+    color: #404040;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  
+  p, img {
+    margin: 5px 0;
+  }
+  
+  p {
+    color: #4a4a4a;
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  hgroup img {
+   margin: 0;
+   width: 20rem;
+   height: 10rem;
+   display: block;
+   margin: 1rem auto;
+   border-radius: 5px;
+  }
 
-}
+  h3, p {
+    margin-left: 20px;
+  }
+  
+  hgroup p {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .discountPercentage, .rating, .stock {
+    font-weight: bold;
+  }
 
-hgroup {
-    text-align: center;
-}
+  .group-color {
+    background-color: #34495e;
+    margin-top: 3rem;
+    border-radius: 5px;
+    padding-bottom: 1rem;
+  }
+

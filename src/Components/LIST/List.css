@@ -1,9 +1,10 @@
 .product-list{
     overflow: scroll;
     min-width: 80vw;
-    max-height: 80vh;
+    max-height: 52vh;
     background-color:var(--backgroun-bleu);
     margin-left: 16rem;
     display: flex;
     flex-wrap: wrap;
+    
 }

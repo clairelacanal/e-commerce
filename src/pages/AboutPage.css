@@ -1,11 +1,18 @@
+.container-about {
+    overflow-y: scroll;
+    height: calc(100vh - var(--nav-height) - var(--footer-height));
+    outline: 1px transparent black;
+    padding-left: calc(var(--width-sidebar) + 2rem);
+    padding-right: 2rem;
+}
+
 .titles {
     width: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
-    margin-left: 35rem;
+    margin: 2rem auto 0;
 }
 
 p {
@@ -14,34 +21,43 @@ p {
 }
 
 .titles img {
-    width: 13rem;
-    height: 13rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50rem;
     display: block;
-    margin: auto 0;
+    margin: 0 auto;
     margin-bottom: 1rem;
 }
 
 .claire-p img {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50rem;
-    margin-right: 20rem;
+    width: 12rem;
+    height: 11rem;
+    border-radius: 5px;
+    margin-left: 1rem;
 }
 
 .yassin-p img {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50rem;
+    width: 12rem;
+    height: 11rem;
+    border-radius: 5px;
+    margin-left: 1rem;
 }
 
 .paragraphes {
-    background-color: aqua;
-    width: 50rem;
-    margin-top: 2rem;
+    margin-top: 3em;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+}
+
+.container-about .presentation  {
+    height: 10rem;
+}
+
+.container-about a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
 }
 

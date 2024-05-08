@@ -27,7 +27,7 @@
     flex: 1; 
     margin-left: 0.5rem; 
     padding: 0.3rem; 
-    border: 0.0625rem solid var(--background-beekeper);
+    border: 1px solid var(--background-beekeper);
     border-radius: 0.25rem;
     margin-top: 1rem;
 }

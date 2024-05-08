@@ -6,6 +6,7 @@ html {
     --background-black: #1e272e;
     --color-text2:#ffffff;
     --color-text1:#0C0C0C;
+    --width-sidebar: 10rem;
     
   }
 
@@ -13,7 +14,7 @@ html {
     background-color: var(--background-beekeper);
     position: absolute;
     height: 80rem;
-    width: 10rem;
+    width: var(--width-sidebar);
     left: 0;
     display: flex;
     flex-direction: column;

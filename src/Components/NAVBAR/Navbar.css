@@ -6,6 +6,7 @@ html {
   --background-black: #1e272e;
   --color-text2:#ffffff;
   --color-text1:#0C0C0C;
+  --nav-height: 5rem;
 }
 
 p {
@@ -14,13 +15,13 @@ p {
 
 nav {
     background-color: #ffbe76;
-    height: 5rem;
+    height: var(--nav-height);
     display: flex;
 }
 
 nav img {
-    width: 5rem;
-    height: 5rem;
+    width: var(--nav-height);
+    height: var(--nav-height);
     margin-left: 2rem;
 }
 

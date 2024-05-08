@@ -11,7 +11,6 @@ function AboutPage() {
     <>
       <Navbar />
       <Side />
-      <Footer />
       <div className="container-about">
         <div className="titles">
           <img src={Logo} alt="logo" />
@@ -30,7 +29,28 @@ function AboutPage() {
             <img src={photoYassin} alt="photo Yassin"></img>
           </div>
         </div>
+        <div className="presentation">
+          <p>
+            We are Yassin and Claire, students at Ironhack in the web
+            development bootcamp aiming to become developers. We created this
+            e-commerce project because we were interested in the topic and
+            because Claire needs to work on an e-commerce site at her company.
+            We designed this site for the site administrator so that they can
+            showcase their merchandise by creating product cards, updating them,
+            and deleting them. To do this project, we used Vite + React along
+            with CRUD methods to implement our logic.
+            <br />
+            <br />
+            Here are our GitHub and LinkedIn links.
+            <br />
+            <a href="https://www.linkedin.com/in/claire-lacanal/">
+              Linkedin de Claire
+            </a>
+            <a href="https://github.com/clairelacanal">GitHub de Claire</a>
+          </p>
+        </div>
       </div>
+      <Footer />
     </>
   );
 }
