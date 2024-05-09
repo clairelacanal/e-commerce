@@ -14,7 +14,7 @@ function AboutPage() {
       <div className="container-about">
         <div className="titles">
           <img src={Logo} alt="logo" />
-          <h1>About Our</h1>
+          <h1>About Us</h1>
           <p>
             Our e-commerce site sells all kinds of products, from perfumes to
             clothing and technology, you're sure to find something you love,
@@ -44,6 +44,9 @@ function AboutPage() {
             Here are our GitHub and LinkedIn links.
             <br />
             <a href="https://www.linkedin.com/in/claire-lacanal/">
+              Linkedin de Claire
+            </a>
+            <a href="https://www.linkedin.com/in/yassine-moussaif-1b0619141/">
               Linkedin de Claire
             </a>
             <a href="https://github.com/clairelacanal">GitHub de Claire</a>
